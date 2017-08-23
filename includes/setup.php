@@ -109,7 +109,7 @@ add_action( 'wp_enqueue_scripts', 'mvp_scripts' );
 /**
  * Remove everything related to the emoji support
  *
- * @since Shoreview 1.0
+ * @since MVP Starter 1.0
 */
 function disable_emojicons_tinymce( $plugins ) {
   	if ( is_array( $plugins ) ) {
@@ -141,7 +141,7 @@ add_filter( 'emoji_svg_url', '__return_false' );
 /**
  * Allow for SVG's in Wordpress
  *
- * @since Shoreview 1.0
+ * @since MVP Starter 1.0
 */
 function allow_svg($filetype_ext_data, $file, $filename, $mimes) {
 	if ( substr($filename, -4) === '.svg' ) {
@@ -167,7 +167,7 @@ add_filter( 'upload_mimes', 'cc_mime_types' );
 /**
  * Remove Actions
  *
- * @since Shoreview 1.0
+ * @since MVP Starter 1.0
 */
 
 // Remove the link to the Really Simple Discovery service endpoint, EditURI link
@@ -205,7 +205,7 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 /**
  * Remove Filters
  *
- * @since Shoreview 1.0
+ * @since MVP Starter 1.0
 */
 // Remove <p> tags from Excerpt altogether
 remove_filter('the_excerpt', 'wpautop');
