@@ -12,7 +12,8 @@
  * @package WordPress
  * @subpackage MVP
  */
-global $modules;
+// If using the ACF Module Loaderizr uncomment this..
+// global $modules;
 
 get_header();
 
