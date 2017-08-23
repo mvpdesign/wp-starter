@@ -16,16 +16,16 @@ global $modules;
 
 get_header();
 
-if ( have_rows('sections') ) {
-	while ( have_rows('sections') ) { the_row();
-		if ($modules instanceof AcfModulesHandler) {
-			$currentModule = $modules->getModule( get_row_layout() );
-			$currentModulePath = $currentModule->getFilePath();
-
-			get_template_part('modules/' . $currentModulePath);
-		}
-	}
-}
+// If using the ACF Module Loaderizr uncomment this..
+// if ( have_rows('sections') ) {
+// 	while ( have_rows('sections') ) { the_row();
+// 		if ($modules instanceof AcfModulesHandler) {
+// 			$currentModule = $modules->getModule( get_row_layout() );
+// 			$currentModulePath = $currentModule->getFilePath();
+//
+// 			get_template_part('modules/' . $currentModulePath);
+// 		}
+// 	}
+// }
 
 get_footer();
-

@@ -1,0 +1,6 @@
+{
+	"name" : "Text Area",
+	"enabled": true,
+	"file" : "textarea.php",
+	"fields" : "group.json"
+}

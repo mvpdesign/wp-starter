@@ -1,0 +1,7 @@
+{
+	"name" : "Hero",
+	"enabled" : true,
+	"file" : "hero.php",
+	"fields" : "group.json",
+	"styles": "/assets/Hero.scss"
+}

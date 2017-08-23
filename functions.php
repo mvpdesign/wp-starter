@@ -13,5 +13,5 @@ require get_template_directory() . '/includes/json-api.php';
 require get_template_directory() . '/includes/mvp-nav-walker.php';
 require get_template_directory() . '/includes/acf.php';
 
-// require get_template_directory() . '/includes/acf-module-loader.php';
+// require get_template_directory() . '/includes/module-loader/module-loader.php';
 // require get_template_directory() . '/includes/editor.php';
